@@ -49,10 +49,10 @@
       <auth-notification ref="auth"></auth-notification>
     </div>
     <div id="legacy-browser">
-      <p>如果该页面长时间未加载，可能是因为你的浏览器版本不支持本页面。请换用最新版本的<%= require('../config.json5').recommendedBrowser %><% if (require('../config.json5').legacyUrl) { %>或访问<a href="<%= require('../config.json5').legacyUrl %>">旧版</a><% } %>。</p>
+      <p>Atualize seu navegador: <%= require('../config.json5').recommendedBrowser %><% if (require('../config.json5').legacyUrl) { %>ou visite<a href="<%= require('../config.json5').legacyUrl %>">versão antiga</a><% } %>。</p>
     </div>
     <noscript>
-      <p>该页面需要加载javascript。请换用最新版本的<%= require('../config.json5').recommendedBrowser %><% if (require('../config.json5').legacyUrl) { %>或访问<a href="<%= require('../config.json5').legacyUrl %>">旧版</a><% } %>。</p>
+      <p>Esta página precisa carregar javascript. Use a versão mais recente <%= require('../config.json5').recommendedBrowser %><% if (require('../config.json5').legacyUrl) { %>ou visite<a href="<%= require('../config.json5').legacyUrl %>">versão antiga</a><% } %>。</p>
     </noscript>
     <script>
       window.onload = function() {

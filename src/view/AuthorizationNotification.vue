@@ -3,32 +3,32 @@
     id="auth-notification"
     class="modal">
     <div class="modal-content flow-text">
-      <h4 v-if="auth">未授权访问</h4>
-      <h4 v-else>网络故障</h4>
+      <h4 v-if="auth">Acesso não autorizado</h4>
+      <h4 v-else>Falha na rede</h4>
       <p v-if="auth">
-        有一些资源不能访问，可能是因为你当前在校外或错误地设置了代理。
-        我们即将为您跳转到学校的统一认证平台进行登录，
-        登录成功之后可以返回当前网页继续观看。
-        如果登录成功之后依然出现以上该错误，可以尝试配置浏览器开启三方cookie。
+        Alguns recursos são inacessíveis. Pode ser porque você está atualmente fora do campus ou configurou um agente incorretamente.
+         Estamos a ponto de iniciar sessão na plataforma de autenticação unificada da sua escola.
+         Depois de efetuar login com sucesso, você pode retornar à página atual para continuar assistindo.
+         Se o erro acima ainda ocorrer depois que o login for bem-sucedido, você pode tentar configurar o navegador para abrir o cookie de três vias.
       </p>
-      <p v-else>有一些资源不能访问，请稍后重试。</p>
+      <p v-else>Alguns recursos não podem ser acessados. Tente novamente mais tarde.</p>
     </div>
     <div class="modal-footer">
       <a
         v-if="auth"
         href="#!"
         class="modal-action modal-close waves-effect waves-green btn-flat"
-        @click="doLogin">跳转</a>
+        @click="doLogin">Saltar</a>
       <a
         href="#!"
         class="modal-action modal-close waves-effect waves-green btn-flat">
-        取消
+        Cancelamento
       </a>
       <a
         href="#!"
         class="modal-action modal-close waves-effect waves-green btn-flat"
         @click="dismissed=true">
-        不再显示
+        Nunca mostre novamente
       </a>
     </div>
   </div>

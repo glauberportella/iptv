@@ -3,9 +3,9 @@
     <table class="highlight">
       <thead>
         <tr>
-          <th>标题</th>
-          <th>频道</th>
-          <th v-if="hasChannelViewers">观众</th>
+          <th>Título</th>
+          <th>Canais</th>
+          <th v-if="hasChannelViewers">Audiência</th>
         </tr>
       </thead>
 

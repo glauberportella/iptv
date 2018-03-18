@@ -33,7 +33,7 @@
                 :src="background"
                 alt="background">
             </div>
-            <a>
+            <a class="text-center">
               <img
                 :src="avatar"
                 class="circle"
@@ -76,21 +76,21 @@
         </li>
         <li><div class="divider"/></li>
         <li :class="{active: $route.name == 'star'}">
-          <router-link :to="{ name: 'star' }">收藏列表</router-link>
+          <router-link :to="{ name: 'star' }">Lista de coleta</router-link>
         </li>
         <li
           v-if="hasEPG"
           :class="{active: $route.name == 'program'}">
-          <router-link :to="{ name: 'program' }">当前节目列表</router-link>
+          <router-link :to="{ name: 'program' }">Lista de programas atuais</router-link>
         </li>
         <li v-if="legacyUrl">
           <a :href="legacyUrl">
-            回忆旧版
+            Recordando a versão antiga
           </a>
         </li>
         <li v-if="uid && !withIP">
           <a @click="$emit('logout')">
-            登出
+            Sair
           </a>
         </li>
       </ul>
@@ -121,6 +121,7 @@ import SpeechRecognition from './SpeechRecognition.vue';
 import {categoryLink, channelLink} from '../route/link.js';
 import {UNAUTHORIZED, UNKNOWN} from '../error.js';
 
+import logo from '../image/logo.png';
 import background from '../image/background.jpg';
 import config from '../../config.json5';
 
@@ -167,12 +168,12 @@ export default {
         return '';
       } else if (this.withIP) {
         if (this.uid.includes(':')) {
-          return 'IPv6用户';
+          return 'IPv6 Usuário';
         } else {
-          return '校内用户';
+          return 'Usuários do campus';
         }
       } else {
-        return '登录用户';
+        return 'Usuário de login';
       }
     },
     hasEPG() {

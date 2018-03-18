@@ -3,8 +3,8 @@
     <ul
       id="scale-menu"
       class="dropdown-content">
-      <li @click="ratio=null"><a>自动</a></li>
-      <li @click="ratio=0"><a>铺满</a></li>
+      <li @click="ratio=null"><a>Automaticamente</a></li>
+      <li @click="ratio=0"><a>Cheio de</a></li>
       <li
         v-for="ar in allowedAspectRatio"
         :key="ar[0]/ar[1]"
@@ -82,43 +82,43 @@
         <table class="centered highlight">
           <thead>
             <tr>
-              <th data-field="key">按键</th>
-              <th data-field="function">功能</th>
+              <th data-field="key">Botão</th>
+              <th data-field="function">Recursos</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <td>ESC</td>
-              <td>返回列表</td>
+              <td>Voltar à lista</td>
             </tr>
             <tr>
               <td>+/-</td>
-              <td>增减音量</td>
+              <td>Aumenta ou diminui o volume</td>
             </tr>
             <tr>
               <td>m</td>
-              <td>切换静音</td>
+              <td>Mute</td>
             </tr>
             <tr>
-              <td>左右</td>
-              <td>切换频道</td>
+              <td>Sobre</td>
+              <td>Alternar canais</td>
             </tr>
             <tr>
-              <td>上下</td>
-              <td>切换分类</td>
+              <td>Para cima e para baixo</td>
+              <td>Alterar a classificação</td>
             </tr>
             <tr>
               <td>f</td>
-              <td>切换全屏</td>
+              <td>Mudar tela cheia</td>
             </tr>
             <tr>
               <td>?</td>
-              <td>查看帮助</td>
+              <td>Ajuda</td>
             </tr>
             <tr>
               <td>p</td>
-              <td>查看节目列表</td>
+              <td>Verifique a lista de programas</td>
             </tr>
           </tbody>
         </table>
@@ -128,13 +128,13 @@
       id="epg-modal"
       class="modal">
       <div class="modal-content">
-        <h4>节目列表</h4>
+        <h4>Mostrar lista</h4>
         <table class="centered responsive-table">
           <thead>
             <tr>
-              <th data-field="date">日期</th>
-              <th data-field="time">时间</th>
-              <th data-field="title">标题</th>
+              <th data-field="date">Data</th>
+              <th data-field="time">Hora</th>
+              <th data-field="title">Título</th>
             </tr>
           </thead>
 

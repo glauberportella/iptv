@@ -56,7 +56,7 @@ export default {
       };
 
       recognition.onnomatch = (event) => {
-        window.Materialize.toast('识别失败');
+        window.Materialize.toast('Falha ao reconhecer');
       };
 
       recognition.onerror = (event) => {
